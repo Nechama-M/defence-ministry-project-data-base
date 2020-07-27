@@ -6,7 +6,8 @@ from typing import Generator
 
 import pytest
 
-from db_api import DBField, SelectionCriteria, DB_ROOT, DBTable, DataBase
+from db import DataBase
+from db_api import DBField, SelectionCriteria, DB_ROOT, DBTable
 
 DB_BACKUP_ROOT = DB_ROOT.parent / (DB_ROOT.name + '_backup')
 STUDENT_FIELDS = [DBField('ID', int), DBField('First', str),
